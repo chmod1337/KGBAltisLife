@@ -13,3 +13,5 @@ life_versionInfo = "Altis Life RPG v3.1.3.5";
 [] execVM "KRON_Strings.sqf";
 
 StartProgress = true;
+
+0 = execVM "IgiLoad\IgiLoadInit.sqf";
