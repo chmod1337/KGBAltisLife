@@ -26,3 +26,4 @@ if(life_is_arrested) then
 player addRating 9999999;
 
 [] call life_fnc_zoneCreator;
+[] execVM "intro.sqf";
