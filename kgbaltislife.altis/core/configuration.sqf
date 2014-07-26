@@ -93,6 +93,9 @@ __CONST__(life_impound_air,850);
 life_istazed = false;
 life_my_gang = ObjNull;
 
+life_god = false;
+life_frozen = false;
+
 life_vehicles = [];
 bank_robber = [];
 switch (playerSide) do

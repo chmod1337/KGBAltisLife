@@ -55,9 +55,5 @@ sleep (_onScreenTime);
 [_role6, _role6names],
 [_role7, _role7names],
 [_role8, _role8names],
-[_role9, _role9names],
-[_role10,_role10names]
-//[_role11,_role11names],
-//[_role12,_role12names],
-//[_role13,_role13names]
+[_role9, _role9names]
 ];
