@@ -60,7 +60,7 @@ class CfgSounds
 		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	class car_lockss
+	class car_lock
 	{
 		name="Car_Lock";
 		sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
