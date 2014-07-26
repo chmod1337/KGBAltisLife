@@ -2503,6 +2503,12 @@
 			<German>Nagelband</German>
 			<French>Herse</French>
 		</Key>
+		<Key ID="STR_Item_Burgers">
+			<Original>Burgers</Original>
+			<English>Burgers</English>
+			<German>Burgers</German>
+			<French>Burgers</French>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
