@@ -14,4 +14,4 @@ life_versionInfo = "Altis Life RPG v3.1.3.5";
 
 StartProgress = true;
 
-0 = execVM "IgiLoad\IgiLoadInit.sqf";
+[] execVM "core\real_weather.sqf";

@@ -60,6 +60,24 @@ class CfgSounds
 		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	class car_lockss
+	{
+		name="Car_Lock";
+		sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
+		titles[] = {0, " "};
+	};
+	class car_unlock
+	{
+		name="Car_Unlock";
+		sound[] = {"\sounds\car_unlock.ogg", 1.0, 1};
+		titles[] = {0, " "};
+	};
+	class handcuffs
+	{
+		name="handcuffs";
+		sound[] = {"\sounds\handcuffs.ogg", 1.0, 1};
+		titles[] = {0, " "};
+	};
 };
 
 class CfgDebriefing
