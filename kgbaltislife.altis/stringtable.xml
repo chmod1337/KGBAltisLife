@@ -80,18 +80,60 @@
 			<French>Annulée</French>
 		</Key>
 	</Package>
-	<Package name="Admin_Menu">
+		<Package name="Admin_Menu">
 		<Key ID="STR_Admin_Title">
 			<Original>Admin Menu</Original>
-			<English>Admin Menu</English>
-			<German>Admin Menü</German>
-			<French>Menu Admin</French>
 		</Key>
 		<Key ID="STR_Admin_GetID">
 			<Original>Get ID</Original>
-			<English>Get ID</English>
-			<German>Get ID</German>
-			<French>Obtenir ID</French>
+		</Key>
+		<Key ID="STR_Admin_Spectate">
+			<Original>Spectate</Original>
+		</Key>
+		<Key ID="STR_Admin_Teleport">
+			<Original>Teleport</Original>
+		</Key>
+		<Key ID="STR_Admin_TpHere">
+			<Original>TP Here</Original>
+		</Key>
+		<Key ID="STR_Admin_TpTo">
+			<Original>TP To</Original>
+		</Key>
+		<Key ID="STR_Admin_Debug">
+			<Original>Debug</Original>
+		</Key>
+		<Key ID="STR_Admin_Compensate">
+			<Original>Comp</Original>
+		</Key>
+		<Key ID="STR_Admin_God">
+			<Original>GodMode</Original>
+		</Key>
+		<Key ID="STR_Admin_CompWarn">
+			<Original>You are about to give yourself %1 to compensate to another player &lt;br/&gt;&lt;br/&gt;You must give this cash to the person you are compensating manually.</Original>
+		</Key>
+		<Key ID="STR_Admin_Success">
+			<Original>You have added %1 to your account.</Original>
+		</Key>
+		<Key ID="STR_Admin_Fail">
+			<Original>You can not go above 999999.</Original>
+		</Key>
+		<Key ID="STR_Admin_Amount">
+			<Original>Please type in the amount to compensate.</Original>
+		</Key>
+		<Key ID="STR_Admin_Freeze">
+			<Original>Freeze</Original>
+		</Key>
+		<Key ID="STR_Admin_Frozen">
+			<Original>You have disabled %1's input.</Original>
+		</Key>
+		<Key ID="STR_Admin_Unfrozen">
+			<Original>You have enabled %1's input.</Original>
+		</Key>
+		<Key ID="STR_Admin_Error">
+			<Original>You can't do that on yourself dumbass.</Original>
+		</Key>
+		<Key ID="STR_Admin_ErrorLevel">
+			<Original>Your Admin Level is not high enough.</Original>
 		</Key>
 	</Package>
 	<Package name="Admin_Notifications">
@@ -118,6 +160,16 @@
 			<English>Player no longer exists?</English>
 			<German>Spieler existiert nicht mehr?</German>
 			<French>Le joueur ne semble pas exister</French>
+		</Key>
+				<Key ID="STR_NOTF_Frozen">
+			<Original>You have been frozen by an administrator</Original>
+			<English>You have been frozen by an administrator</English>
+			<German>To Be Changed</German>
+		</Key>
+		<Key ID="STR_NOTF_Unfrozen">
+			<Original>You have been unfrozen by an administrator</Original>
+			<English>You have been unfrozen by an administrator</English>
+			<German>To Be Changed</German>
 		</Key>
 	</Package>
 	<Package name="ATM_Strings">
