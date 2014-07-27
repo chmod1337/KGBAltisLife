@@ -15,7 +15,7 @@ if(_sum > 0) then
 	sleep 5;
 	if(([true,"cocaine",1] call life_fnc_handleInv)) then
 	{
-		titleText[format[localize "STR_NOTF_Collected",localize "STR_Item_Cocaine"],"PLAIN"];
+		titleText[format[localize "STR_NOTF_Collected",_sum, localize "STR_Item_Cocaine"],"PLAIN"];
 	};
 }
 else
