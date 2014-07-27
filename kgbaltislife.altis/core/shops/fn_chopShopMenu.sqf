@@ -6,6 +6,7 @@
 	Opens & initializes the chop shop menu.
 */
 if(life_action_inUse) exitWith {hint localize "STR_NOTF_ActionInProc"};
+if(!playerSide == civilian) exitWith {hint localize "STR_NOTF_NotACiv"}; 
 disableSerialization;
 private["_nearVehicles","_control"];
 _nearVehicles = nearestObjects [getMarkerPos (_this select 3),["Car","Truck"],25];

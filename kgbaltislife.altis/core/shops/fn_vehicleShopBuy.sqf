@@ -85,6 +85,8 @@ switch(playerSide) do {
 };
 
 _vehicle allowDamage true;
+_vehicle setDamage 0;
+_vehicle setFuel 1;
 
 life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 if(_mode) then {
