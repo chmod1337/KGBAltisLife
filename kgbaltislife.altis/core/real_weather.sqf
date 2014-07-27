@@ -31,7 +31,7 @@
 	_random = true;
 
 	// Min time seconds (real time) before a new weather forecast
-	_mintime = 450;
+	_mintime = 600;
 
 	// Max time seconds (real time) before a new weather forecast
 	_maxtime = 1200;
@@ -91,18 +91,18 @@
 			if(wcweatherstart) then {
 				wcweatherstart = false;
 				skipTime -24;
-				86400 setRain (wcweather select 0);
-				86400 setfog (wcweather select 1);
-				86400 setOvercast (wcweather select 2);
+				648 setRain (wcweather select 0);
+				648 setfog (wcweather select 1);
+				648 setOvercast (wcweather select 2);
 				skipTime 24;
 				simulweatherSync;
 				setwind (wcweather select 3);
 				setdate (wcweather select 4);
 			}else{
 				wcweather = _this select 1;
-				60 setRain (wcweather select 0);
-				60 setfog (wcweather select 1);
-				60 setOvercast (wcweather select 2);
+				216 setRain (wcweather select 0);
+				216 setfog (wcweather select 1);
+				216 setOvercast (wcweather select 2);
 				setwind (wcweather select 3);
 				setdate (wcweather select 4);
 			};
@@ -127,9 +127,9 @@
 
 	// apply weather
 	skipTime -24;
-	86400 setRain (wcweather select 0);
-	86400 setfog (wcweather select 1);
-	86400 setOvercast (wcweather select 2);
+	648 setRain (wcweather select 0);
+	648 setfog (wcweather select 1);
+	648 setOvercast (wcweather select 2);
 	skipTime 24;
 	simulweatherSync;
 	setwind (wcweather select 3);
@@ -175,9 +175,9 @@
 		_lastrain = _rain;
 
 		wcweather = [_rain, _fog, _overcast, _wind, date];
-		60 setRain (wcweather select 0);
-		60 setfog (wcweather select 1);
-		60 setOvercast (wcweather select 2);
+		216 setRain (wcweather select 0);
+		216 setfog (wcweather select 1);
+		216 setOvercast (wcweather select 2);
 		setwind (wcweather select 3);
 		if(_random) then {
 			_timeforecast = _mintime + (random (_maxtime - _mintime));
