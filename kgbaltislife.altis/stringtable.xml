@@ -1493,6 +1493,12 @@
  			<English>Couldn't add it to your inventory.</English>
  			<French>Impossible d'ajouter cela à votre inventaire</French>
  		</Key>
+		 <Key ID="STR_NOTF_NotARebel">
+ 			<Original>You are not a rebel.</Original>
+ 			<English>You are not a rebel.</English>
+ 			<French>Vous n'êtes pas un rebelle.</French>
+			<German>Sie sind kein Rebell.</German>
+ 		</Key>
 	</Package>
 	<Package name="Jail_Strings">
 		<Key ID="STR_Jail_Warn">
