@@ -6,7 +6,7 @@
 	Opens & initializes the chop shop menu.
 */
 if(life_action_inUse) exitWith {hint localize "STR_NOTF_ActionInProc"};
-if(!playerSide == civilian) exitWith {hint localize "STR_NOTF_NotACiv"}; 
+if(playerside != civilian) exitWith {hint localize "STR_NOTF_NotACiv"}; 
 disableSerialization;
 private["_nearVehicles","_control"];
 _nearVehicles = nearestObjects [getMarkerPos (_this select 3),["Car","Truck"],25];
@@ -20,7 +20,7 @@ _control = ((findDisplay 39400) displayCtrl 39402);
 {
 	if(alive _x) then {
 		_className = typeOf _x;
-		_displayName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
+		_displayName = getText(configFile >> "CfgVehicle" >> _className >> "displayName");
 		_picture = getText(configFile >> "CfgVehicles" >> _className >> "picture");
 		_ind = [_className,(call life_garage_sell)] call fnc_index;
 		
