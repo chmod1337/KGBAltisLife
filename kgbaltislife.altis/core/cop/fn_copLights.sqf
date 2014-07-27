@@ -1,4 +1,4 @@
-
+/*
 	File: fn_copLights.sqf
 	Author: mindstorm, modified by Adanteh
 	
