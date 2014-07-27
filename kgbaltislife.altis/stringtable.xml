@@ -1184,10 +1184,10 @@
 			<French>Tu as ramassé : %1 %2</French>
 		</Key>
 		<Key ID="STR_NOTF_Collected">
-			<Original>You have collected some %1</Original>
-			<English>You have collected some %1</English>
-			<German>Du hast %1 gesammelt</German>
-			<French>Tu as ramassé %1</French>
+			<Original>You have collected %1 %2</Original>
+			<English>You have collected %1 %2</English>
+			<German>Du hast %1 %2 gesammelt</German>
+			<French>Tu as ramassé %1 %2</French>
 		</Key>
 		<Key ID="STR_NOTF_DPStart">
 			<Original>You are to deliver this package to %1</Original>
@@ -1498,6 +1498,12 @@
  			<English>You are not a rebel.</English>
  			<French>Vous n'êtes pas un rebelle.</French>
 			<German>Sie sind kein Rebell.</German>
+ 		</Key>
+		<Key ID="STR_NOTF_NotACiv">
+ 			<Original>You are not a civilian.</Original>
+ 			<English>You are not a civilian.</English>
+ 			<French>Vous n'êtes pas un civil.</French>
+			<German>Sie sind nicht ein Zivil.</German>
  		</Key>
 	</Package>
 	<Package name="Jail_Strings">
@@ -2876,8 +2882,8 @@
 			<French>Process Sel</French>
 		</Key>
 		<Key ID="STR_Process_Cocaine">
-			<Original>Processing Cocain</Original>
-			<English>Processing Cocain</English>
+			<Original>Processing Cocaine</Original>
+			<English>Processing Cocaine</English>
 			<German>Kokain Verarbeitung</German>
 			<French>Process Cocain</French>
 		</Key>
