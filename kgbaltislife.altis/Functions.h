@@ -236,6 +236,7 @@ class Life_Client_Core
 		class inventoryOpened {};
 		class isUIDActive {};
 		class fatigueReset {};
+		class updateUniform {};
 	};
 	
 	class Network
