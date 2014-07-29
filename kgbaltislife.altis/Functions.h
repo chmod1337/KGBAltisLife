@@ -237,6 +237,7 @@ class Life_Client_Core
 		class isUIDActive {};
 		class fatigueReset {};
 		class updateUniform {};
+		class autoSave {};
 	};
 	
 	class Network

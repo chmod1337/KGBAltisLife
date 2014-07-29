@@ -98,3 +98,6 @@ life_fnc_moveIn = compileFinal
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 
 [] spawn life_fnc_fatigueReset;
+
+// Init automatically saving gear
+[] spawn life_fnc_autoSave;
