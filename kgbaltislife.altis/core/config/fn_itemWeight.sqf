@@ -57,5 +57,6 @@ switch (_item) do
 	case "storagesmall": {5};
 	case "storagebig": {10};
 	case "burgerrs": {1};
+	case "handcuffs": {1};
 	default {1};
 };

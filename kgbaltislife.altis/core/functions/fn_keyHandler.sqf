@@ -79,7 +79,13 @@ switch (_code) do
 		if(_shift) then {_handled = true;};
 		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 		{
-			[] call life_fnc_restrainAction;
+			if([false,"uitem_handcuffs",1] call life_fnc_handleInv) then
+			{
+				[] call life_fnc_restrainAction;
+			}
+			else
+			{
+				hint (localize"STR_NOTF_NoHandcuffs");
 		};
 	};
 	

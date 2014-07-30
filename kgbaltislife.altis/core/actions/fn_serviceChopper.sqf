@@ -8,7 +8,7 @@
 disableSerialization;
 private["_search","_ui","_progress","_cP","_pgText","_title"];
 if(life_action_inUse) exitWith {hint localize "STR_NOTF_Action"};
-_search = nearestObjects[getPos air_sp, ["Air"],5];
+_search = nearestObjects[getPos air_sp, ["Air"],10];
 if(count _search == 0) exitWith {hint localize "STR_Service_Chopper_NoAir"};
 if(life_cash < 1000) exitWith {hint localize "STR_Serive_Chopper_NotEnough"};
 life_cash = life_cash - 1000;
@@ -27,14 +27,14 @@ while {true} do
 	sleep  0.2;
 	_cP = _cP + 0.01;
 	_progress progressSetPosition _cP;
-	_pgText ctrlSetText format["%2 (%1%2)...",round(_cP * 100),"%",_title];
+	_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_title];
 	if(_cP >= 1) exitWith {};
 };
 
 if(!alive (_search select 0) || (_search select 0) distance air_sp > 10) exitWith {life_action_inUse = false; hint localize "STR_Service_Chopper_Missing"};
 if(!local (_search select 0)) then
 {
-	[{(_search select 0) setFuel 1;},"BIS_fnc_spawn",(_search select 0),false] spawn life_fnc_MP;
+	[{_this setFuel 1;},"BIS_fnc_spawn",(_search select 0),false] spawn life_fnc_MP;
 }
 	else
 {
