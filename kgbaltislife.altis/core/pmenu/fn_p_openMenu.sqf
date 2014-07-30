@@ -23,6 +23,11 @@ switch(playerSide) do
 	};
 };
 
+if(__GETC__(life_adminlevel) < 0) then
+{
+	ctrlShow[2012,true];
+};
+
 if(__GETC__(life_adminlevel) < 1) then
 {
 	ctrlShow[2020,false];

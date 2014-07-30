@@ -10,6 +10,7 @@ _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
 //Error check
 if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
+if(side != civilian) exitWith {hint (localize "STR_NOTF_NotACiv");};
 
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
