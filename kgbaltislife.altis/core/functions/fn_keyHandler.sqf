@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_keyHandler.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -86,6 +87,7 @@ switch (_code) do
 			else
 			{
 				hint (localize"STR_NOTF_NoHandcuffs");
+			};
 		};
 	};
 	
@@ -231,7 +233,8 @@ switch (_code) do
 				};
 			} else {
 				_locked = locked _veh;
-				if((_veh in life_vehicles || __GETC__(life_coplevel) > 3) && player distance _veh < 8) then {
+				if((_veh in life_vehicles && player distance _veh < 8) OR player distance _veh < 8 && playerSide == west && __GETC__(life_coplevel) > 3) then
+				{
 					if(_locked == 2) then {
 						if(local _veh) then {
 							_veh lock 0;
@@ -256,7 +259,7 @@ switch (_code) do
 	//
 	case 36:
 	{
-		if(!life_action_gather && missionNamespace getVariable "life_inv_pickaxe" > 0)
+		if(!life_action_gather && missionNamespace getVariable "life_inv_pickaxe" > 0) then
 		{
 			[] call life_fnc_pickaxeUse;
 		};
