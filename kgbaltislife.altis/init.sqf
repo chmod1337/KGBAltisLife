@@ -7,7 +7,7 @@ StartProgress = false;
 
 if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
-
+if (isServer) then {[] execVM "scripts\kgb.sqf";};
 life_versionInfo = "Altis Life RPG v3.1.4";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
