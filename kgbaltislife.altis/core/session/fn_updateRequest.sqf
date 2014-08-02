@@ -1,7 +1,9 @@
 /*
 	File:
 */
-private["_packet","_array","_flag"];
+private["_packet","_array","_flag","_civPosition"];
+_civPosition = getPos player;
+diag_log format ["%1",_civPosition];
 _packet = [getPlayerUID player,(profileName),playerSide,life_cash,life_atmcash];
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
@@ -19,6 +21,9 @@ switch (playerSide) do {
 		[] call life_fnc_civFetchGear;
 		_packet set[count _packet,civ_gear];
 		_packet set[count _packet,life_is_arrested];
+		_packet set[count _packet,_civPosition];
+		_packet set[count _packet,life_is_alive];
+		
 	};
 };
 

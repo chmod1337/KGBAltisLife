@@ -76,6 +76,7 @@ life_eat_donuts = 30;
 ****** Life Variables *******
 *****************************
 */
+life_is_alive = false;
 life_net_dropped = false;
 life_hit_explosive = false;
 life_siren_active = false;
