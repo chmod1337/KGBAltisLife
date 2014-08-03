@@ -83,25 +83,17 @@ class Life_Client_Core
 	{
 		file = "core\actions";
 		class buyLicense {};
-		class chemlightUse {};
-		class heal {};
 		class healHospital {};
 		class pushVehicle {};
 		class repairTruck {};
 		class serviceChopper {};
-		class serviceTruck {};
 		class catchFish {};
 		class catchTurtle {};
 		class dpFinish {};
 		class dropFishingNet {};
-		class gatherApples {};
-		class gatherCannabis {};
-		class gatherHeroin {};
-		class gatherOil {};
 		class getDPMission {};
 		class postBail {};
 		class processAction {};
-		class suicideBomb {};
 		class arrestAction {};
 		class escortAction {};
 		class impoundAction {};
@@ -115,13 +107,11 @@ class Life_Client_Core
 		class pickupItem {};
 		class pickupMoney {};
 		class ticketAction {};
-		class gatherPeaches {};
-		class gatherCocaine {};
-		class pumpRepair {};
 		class packupSpikes {};
 		class storeVehicle {};
 		class robAction {};
 		class captureHideout {};
+		class gather {};
 		class surrender {};
 	};
 	
