@@ -3508,6 +3508,18 @@
 			<Italian>Striscia Chiodata</Italian>
 			<Portuguese>Spike Strip</Portuguese>
 		</Key>
+		<Key ID="STR_Item_Burgers">
+			<Original>Burgers</Original>
+			<English>Burgers</English>
+			<German>Burgers</German>
+			<French>Burgers</French>
+		</Key>
+		<Key ID="STR_Item_Handcuffs">
+			<Original>Handcuffs</Original>
+			<English>Handcuffs</English>
+			<German>Handschellen</German>
+			<French>Menottes</French>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
