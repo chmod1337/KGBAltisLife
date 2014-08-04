@@ -39,8 +39,11 @@
 		[] call _fnc_water;
 		sleep 250;
 		[] call _fnc_food;
+		life_health = getDammage player;
 	};
 };
+
+player setDamage life_health;
 
 [] spawn
 {

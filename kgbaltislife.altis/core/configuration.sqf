@@ -40,7 +40,7 @@ __CONST__(life_revive_fee,250); //Fee for players to pay when revived.
 __CONST__(life_houseLimit,5); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
 
 //Gang related stuff?
-__CONST__(life_gangPrice,75000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
+__CONST__(life_gangPrice,250000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
 __CONST__(life_gangUpgradeBase,10000); //MASDASDASD
 __CONST__(life_gangUpgradeMultipler,2.5); //BLAH
 
@@ -70,8 +70,12 @@ life_use_atm = true;
 life_is_arrested = false;
 life_delivery_in_progress = false;
 life_action_in_use = false;
-life_thirst = 100;
-life_hunger = 100;
+
+if(playerSide != civilian) then
+{
+	life_thirst = 100;
+	life_hunger = 100;
+};
 __CONST__(life_paycheck_period,5); //Five minutes
 life_cash = 0;
 __CONST__(life_impound_car,350);

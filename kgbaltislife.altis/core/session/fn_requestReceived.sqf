@@ -66,6 +66,10 @@ switch(playerSide) do {
 		
 		civ_position = _this select 11;
         life_is_alive = _this select 12;
+		
+		life_hunger = _this select 13;
+		life_thirst = _this select 14;
+		life_health = _this select 15;
 	};
 	
 	case independent: {
