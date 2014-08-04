@@ -7,7 +7,7 @@
 */
 closeDialog 0;
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
-_resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1"];
+_resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","weed_2","weed_3"];
 _zone = "";
 
 //Find out what zone we're near
@@ -26,7 +26,7 @@ switch(true) do {
 	case (_zone in ["peaches_1","peaches_2","peaches_3","peaches_4"]): {_gather = "peach"; _val = 3;};
 	case (_zone in ["heroin_1"]): {_gather = "heroinu"; _val = 1;};
 	case (_zone in ["cocaine_1"]): {_gather = "cocaine"; _val = 1;};
-	case (_zone in ["weed_1"]): {_gather = "cannabis"; _val = 1;};
+	case (_zone in ["weed_1","weed_2","weed_3"]): {_gather = "cannabis"; _val = 1;};
 	default {""};
 };
 //gather check??
