@@ -15,5 +15,5 @@ if(isNil "_target") exitwith {};
 if(isNull _target) exitWith {};
 if(_unit == player) exitWith {hint localize "STR_Admin_Error";};
 
-_unit setPos (getPos player);
+[[player, _unit], "life_fnc_adminTpHereServer", false] spawn life_fnc_MP;
 hint format["You have teleported %1 to your location",_unit getVariable["realname",name _unit]];
