@@ -67,6 +67,9 @@ switch (_mode) do
 			case "storagebig": {"life_inv_storagebig"};
 			case "burgers": {"life_inv_burgers"};
 			case "handcuffs": {"life_inv_handcuffs"};
+			case "frog": {"life_inv_frog"}; //LSD
+			case "froglegs": {"life_inv_froglegs"};
+			case "froglsd": {"life_inv_froglsd"};
 		};
 	};
 	
@@ -125,6 +128,9 @@ switch (_mode) do
 			case "life_inv_storagebig": {"storagebig"};
 			case "life_inv_burgers": {"burgers"};
 			case "life_inv_handcuffs": {"handcuffs"};
+			case "life_inv_frog": {"frog"}; //LSD
+			case "life_inv_froglegs": {"froglegs"};
+			case "life_inv_froglsd": {"froglsd"};
 			
 		};
 	};

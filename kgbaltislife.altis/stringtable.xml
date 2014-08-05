@@ -3520,6 +3520,24 @@
 			<German>Handschellen</German>
 			<French>Menottes</French>
 		</Key>
+		<Key ID="STR_Frog">
+			<Original>Bullfrog</Original>
+			<English>Bullfrog</English>
+			<German>Ochsenfrosch</German>
+			<French>Grosse Grenouille</French>
+		</Key>
+		<Key ID="STR_LSD">
+			<Original>LSD</Original>
+			<English>LSD</English>
+			<German>LSD</German>
+			<French>LSD</French>
+		</Key>
+		<Key ID="STR_Frog_Legs">
+			<Original>Frog Legs</Original>
+			<English>Frog Legs</English>
+			<German>Froschschenkel</German>
+			<French>Cuisses de Grenouilles</French>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
@@ -4585,6 +4603,14 @@
 			<French>Dispositif de minage</French>
 			<Italian>Piazza mine dal veicolo</Italian>
 			<Portuguese>Minerar</Portuguese>
+		</Key>
+			<Key ID="STR_Catch_Frog">
+			<Original>Catch Bullfrog</Original>
+			<English>Catch Bullfrog</English>
+			<German>Fangen Ochsenfrosch</German>
+			<French>Prise Grosse Grenouille</French>
+			<Italian>Prendere Rana Toro</Italian>
+			<Portuguese>Captura Sapo-Boi</Portuguese>
 		</Key>
 	</Package>
 	<Package name="Session_Strings">

@@ -87,4 +87,9 @@ switch (_var) do
 	case "license_civ_cement": {(localize "STR_License_Cement")};
 	case "license_med_air": {(localize "STR_License_Pilot")};
 	case "license_civ_home": {(localize "STR_License_Home")};
+	
+	//Frog Addon
+	case "life_inv_frog": {(localize "STR_Frog")};
+	case "life_inv_froglsd": {(localize "STR_LSD")};
+	case "life_inv_froglegs": {(localize "STR_Frog_Legs")};
 };
