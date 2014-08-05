@@ -23,9 +23,6 @@ switch (playerSide) do {
 		_packet set[count _packet,life_is_arrested];
 		_packet set[count _packet,_civPosition];
 		_packet set[count _packet,life_is_alive];
-		_packet set[count _packet,life_hunger];
-		_packet set[count _packet,life_thirst];
-		_packet set[count _packet,getDammage player];
 		
 	};
 };
