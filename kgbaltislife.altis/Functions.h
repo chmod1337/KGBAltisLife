@@ -238,8 +238,12 @@ class Life_Client_Core
 		class updateUniform {};
 		class autoSave {};
 		
-		//Random Round (remove if not needed)
+		//Random Round + other imports from BL codebase
 		class randomRound {};
+		class globalSound {};
+		class globalSoundClient {};
+		
+	
 	};
 	
 	class Network
