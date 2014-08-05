@@ -242,8 +242,8 @@ class Life_Client_Core
 		class randomRound {};
 		class globalSound {};
 		class globalSoundClient {};
+		class playSound {};
 		
-	
 	};
 	
 	class Network
