@@ -13,7 +13,7 @@ _unit = call compile format["%1",getSelData(2632)];
 if(isNull _unit) exitWith {}; //Bad unit?
 if(_unit == player) exitWith {hint localize "STR_GNOTF_KickSelf"};
 
-if(count(grpPlayer getVariable ["gang_members",8]) == (grpPlayer getVariable ["gang_maxMembers",8])) exitWith {hint localize "STR_GNOTF_MaxSlot"};
+if(count(grpPlayer getVariable ["gang_members",10]) == (grpPlayer getVariable ["gang_maxMembers",10])) exitWith {hint localize "STR_GNOTF_MaxSlot"};
 
 _action = [
 	format[localize "STR_GNOTF_InvitePlayerMSG",_unit getVariable ["realname",name _unit]],

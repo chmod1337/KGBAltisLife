@@ -5,6 +5,7 @@
 	Description:
 	Determinds the upgrade price and blah
 */
+/*
 private["_maxMembers","_slotUpgrade","_upgradePrice"];
 _maxMembers = grpPlayer getVariable ["gang_maxMembers",8];
 _slotUpgrade = _maxMembers + 4;
@@ -32,3 +33,5 @@ if(_action) then {
 } else {
 	hint localize "STR_GNOTF_UpgradeCancel";
 };
+*/
+hint "Please visit our website to upgrade your gangs slots! www.kgbgaming.com";
