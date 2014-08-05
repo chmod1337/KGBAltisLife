@@ -2697,7 +2697,8 @@ class Mission
 				class Item44
 				{
 					position[]={3686.1721,10.234864,13153.101};
-					azimut=-200.60229;
+					azimut=-200.60201;
+					offsetY=0.2;
 					special="NONE";
 					id=141;
 					side="CIV";
@@ -3397,13 +3398,13 @@ class Mission
 				class Item105
 				{
 					position[]={14167.511,16.736778,16519.953};
-					azimut=-44.901554;
+					azimut=-44.9016;
 					special="NONE";
 					id=202;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Go-kart  Shop"",life_fnc_vehicleShopMenu,[""kart_shop"",civilian,""kart_shop_1"",""civ"",""Bobby's Kart Shack""]]; this addAction[""Clothing Store"",life_fnc_clothingMenu,""kart""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Go-kart  Shop"",life_fnc_vehicleShopMenu,[""kart_shop"",civilian,""kart_shop_1"",""civ"",""Bobby's Kart Shack""]]; this addAction[""Clothing Store"",life_fnc_clothingMenu,""kart""];  this addAction[format[""%1 ($%2)"",[""license_civ_kart""] call life_fnc_varToStr,[([""kart""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""kart"",0,false,false,"""",' !license_civ_kart && playerSide == civilian '];";
 				};
 				class Item106
 				{
@@ -3612,7 +3613,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.2;
-					init="this allowDamage false; this enableSimulation false;   this addAction[""Gas Station"",life_fnc_virt_menu,""market""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Gas Station"",life_fnc_weaponShopMenu,""genstore""];   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -3653,7 +3654,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.2;
-					init="this allowDamage false; this enableSimulation false;   this addAction[""Gas Station"",life_fnc_virt_menu,""market""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false;this addAction[""General Store"",life_fnc_weaponShopMenu,""genstore""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -3674,7 +3675,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.2;
-					init="this allowDamage false; this enableSimulation false;   this addAction[""Gas Station"",life_fnc_virt_menu,""market""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false;this addAction[""Gas Station"",life_fnc_weaponShopMenu,""genstore""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -3695,7 +3696,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.2;
-					init="this allowDamage false; this enableSimulation false;   this addAction[""Gas Station"",life_fnc_virt_menu,""market""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false;this addAction[""Gas Station"",life_fnc_weaponShopMenu,""genstore""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -3715,7 +3716,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.2;
-					init="this allowDamage false; this enableSimulation false;   this addAction[""Gas Station"",life_fnc_virt_menu,""market""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false;this addAction[""Gas Station"",life_fnc_weaponShopMenu,""genstore""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -3735,7 +3736,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.2;
-					init="this allowDamage false; this enableSimulation false;   this addAction[""Gas Station"",life_fnc_virt_menu,""market""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false;this addAction[""Gas Station"",life_fnc_weaponShopMenu,""genstore""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -3756,7 +3757,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false;   this addAction[""Gas Station"",life_fnc_virt_menu,""market""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Gas Station"",life_fnc_weaponShopMenu,""genstore""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -3777,7 +3778,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.2;
-					init="this allowDamage false; this enableSimulation false;   this addAction[""Gas Station"",life_fnc_weaponShopMenu,""gas""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false;this addAction[""Gas Station"",life_fnc_weaponShopMenu,""genstore""];  this allowDamage false;   this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu];   this addAction[""Bank Account Insurance ($1000)"",{if(life_atmcash > 1000) then {life_has_insurance = true};},"""",0,false,false,"""",'!life_has_insurance'];  this addAction[""Rob Cash Register"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -28141,7 +28142,8 @@ class Mission
 		class Item2232
 		{
 			position[]={3628.3638,10.065974,13119.14};
-			azimut=39.917339;
+			azimut=39.917301;
+			offsetY=0.5;
 			id=2462;
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
@@ -30996,7 +30998,7 @@ class Mission
 			name="heroin_1";
 			text="Heroin Field";
 			type="hd_dot";
-			colorName="ColorRed";
+			colorName="ColorPink";
 		};
 		class Item140
 		{
@@ -31014,7 +31016,7 @@ class Mission
 			name="heroin_p";
 			text="Heroin Processing";
 			type="mil_dot";
-			colorName="ColorRed";
+			colorName="ColorPink";
 		};
 		class Item142
 		{
@@ -31738,7 +31740,6 @@ class Mission
 			text="Southern Checkpoint";
 			type="loc_Cross";
 			colorName="ColorBlue";
-			angle=35.4114;
 		};
 		class Item230
 		{
