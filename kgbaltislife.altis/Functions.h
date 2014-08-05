@@ -62,6 +62,7 @@ class Life_Client_Core
 		class adminFreeze {};
 		class adminTpHereServer {};
 		class adminTpToServer {};
+	};
 	
 	class Medical_System
 	{
