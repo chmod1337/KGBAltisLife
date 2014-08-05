@@ -14,7 +14,6 @@ switch (_state) do
 	case 0:
 	{
 		license_civ_rebel = false;
-		license_civ_driver = false;
 		license_civ_heroin = false;
 		license_civ_marijuana = false;
 		license_civ_coke = false;
@@ -25,7 +24,6 @@ switch (_state) do
 	{
 		license_civ_gun = false;
 		license_civ_rebel = false;
-		license_civ_driver = false;
 	};
 	
 	//Remove motor vehicle licenses
@@ -33,9 +31,7 @@ switch (_state) do
 	{
 		if(license_civ_driver OR license_civ_air OR license_civ_truck OR license_civ_boat) then {
 			license_civ_driver = false;
-			license_civ_air = false;
 			license_civ_truck = false;
-			license_civ_boat = false;
 			hint localize "STR_Civ_LicenseRemove_1";
 		};
 	};
