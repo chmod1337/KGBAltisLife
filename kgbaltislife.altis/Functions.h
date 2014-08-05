@@ -237,6 +237,9 @@ class Life_Client_Core
 		class fatigueReset {};
 		class updateUniform {};
 		class autoSave {};
+		
+		//Random Round (remove if not needed)
+		class randomRound {};
 	};
 	
 	class Network
