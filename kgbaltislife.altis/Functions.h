@@ -361,7 +361,7 @@ class Life_Client_Core
 		class virt_sell {};
 		class chopShopMenu {};
 		class chopShopSelection {};
-		class chopShopSell {};
+		class chopShopSell {};		
 	};
 	
 	class Items
