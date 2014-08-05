@@ -11,7 +11,8 @@ if(_type == "") exitWith {-1};
 
 switch (_type) do
 {
-	case "driver": {500}; //Drivers License cost
+	case "driver": {750}; //Drivers License cost
+	case "kart": {1000}
 	case "boat": {1000}; //Boating license cost
 	case "pilot": {25000}; //Pilot/air license cost
 	case "gun": {10000}; //Firearm/gun license cost
