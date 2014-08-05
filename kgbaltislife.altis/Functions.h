@@ -116,6 +116,12 @@ class Life_Client_Core
 		class captureHideout {};
 		class gather {};
 		class surrender {};
+		class robShops {}; //Rob Gas Station & Shops Script
+		
+		//LSD
+		class CatchFrogAction {};
+		class CookFrogAction {};
+		class CookHermitLSD {};
 	};
 	
 	class Housing

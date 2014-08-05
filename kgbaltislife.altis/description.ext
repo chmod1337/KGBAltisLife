@@ -78,6 +78,18 @@ class CfgSounds
 		sound[] = {"\sounds\handcuffs.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};
+	class gas_rob
+	{
+	name="gas_rob";
+	sound[] = {"\sounds\gas_rob.ogg", 1.0, 1};
+	titles[] = {0, " "};
+	};
+	class catchfrog
+	{
+	name="catchfrog";
+	sound[] = {"\sounds\catchfrog.ogg", 1.0, 1};
+	titles[] = {0, " "};
+	};
 };
 
 class CfgDebriefing
