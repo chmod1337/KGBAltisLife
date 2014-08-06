@@ -3548,6 +3548,14 @@
 			<Italian>Licenza di Guida</Italian>
 			<Portuguese>Licença de Motorista</Portuguese>
 		</Key>
+		<Key ID="STR_License_Kart">
+			<Original>Kart License</Original>
+			<English>Kart License</English>
+			<German>Karte Lizenz</German>
+			<French>Plan Licence</French>
+			<Italian>Mappa licenza</Italian>
+			<Portuguese>Licença Mapa</Portuguese>
+		</Key>
 		<Key ID="STR_License_Pilot">
 			<Original>Pilot License</Original>
 			<English>Pilot License</English>
