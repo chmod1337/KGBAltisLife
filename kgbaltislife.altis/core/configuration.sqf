@@ -178,7 +178,7 @@ life_licenses =
 	["license_cop_swat","cop"],
 	["license_cop_cg","cop"],
 	["license_civ_driver","civ"],
-	["locense_civ_kart", "civ"[,
+	["license_civ_kart", "civ"],
 	["license_civ_air","civ"],
 	["license_civ_heroin","civ"],
 	["license_civ_marijuana","civ"],
