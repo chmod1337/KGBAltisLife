@@ -12,21 +12,21 @@ sleep 4; //Wait in seconds before the credits start after player is in-game
 _role1 = "Welcome to";
 _role1names = ["KGB Gaming's Altis Life."];
 _role2 = "Developers:";
-_role2names = ["Buddytex"];
-_role3 = "Web Dev, Textures + Bank Port:";
-_role3names = ["5150 Joker"];
-_role4 = "Cinematography + Audio Specialist";
+_role2names = ["-Lead Dev- Buddytex", "-Co-Dev and jack of all trades- 5150 Joker"];
+_role3 = "Textures:";
+_role3names = ["5150 Joker", "The Northern Alex"];
+_role4 = "Audio file contributions";
 _role4names = ["Capt Pie"];
-_role5 = "TeamSpeak Dev:";
+_role5 = "TeamSpeak dev and police chief:";
 _role5names = ["The Babbs"];
-_role6 = "Police Leaders:";
-_role6names = ["TheBabbs"];
-_role7 = "Visit Us:";
+_role6 = "Lead tester and jail dev:";
+_role6names = ["Jericho"];
+_role7 = "Visit us:";
 _role7names = ["www.kgbgaming.com", "ts3.kgbgaming.com"];
-_role8 = "For Server Rules:";
-_role8names = ["Press M To View"];
-_role9 = "Original Bank Design by:";
-_role9names = ["Spookygnu"];
+_role8 = "For server rules and server info:";
+_role8names = ["Press M to view"];
+_role9 = "Special thanks to our testing team:";
+_role9names = ["Angerthosenear", "Nasty Nikolai", "Jericho", "Crunchedd", "The Northern Alex", "Undage"];
 
 {
 sleep 2;
