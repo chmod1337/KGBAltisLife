@@ -12,7 +12,7 @@ sleep 4; //Wait in seconds before the credits start after player is in-game
 _role1 = "Welcome to";
 _role1names = ["KGB Gaming's Altis Life."];
 _role2 = "Developers:";
-_role2names = ["-Lead Dev- Buddytex", "-Co-Dev and jack of all trades- 5150 Joker"];
+_role2names = ["Lead Dev:     Buddytex", "Co-Dev and jack of all trades: 5150 Joker"];
 _role3 = "Textures:";
 _role3names = ["5150 Joker", "The Northern Alex"];
 _role4 = "Audio file contributions";
