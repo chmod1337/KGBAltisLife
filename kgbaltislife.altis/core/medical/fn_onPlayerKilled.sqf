@@ -76,8 +76,9 @@ if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _ki
 };
 
 //Killed by cop stuff...
-if(side _killer == west && playerSide != west) then {
-	life_copRecieve = _killer;
+if(side _killer == west) then {
+	[[player,_killer,true],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
+	[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 	//Did I rob the federal reserve?
 	if(!life_use_atm && {life_cash > 0}) then {
 		[format[localize "STR_Cop_RobberDead",[life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
@@ -85,9 +86,9 @@ if(side _killer == west && playerSide != west) then {
 	};
 };
 
-if(!isNull _killer && {_killer != _unit}) then {
-	life_removeWanted = true;
-};
+//if(!isNull _killer && {_killer != _unit}) then {
+	//life_removeWanted = true;
+//};
 
 _handle = [_unit] spawn life_fnc_dropItems;
 waitUntil {scriptDone _handle};
@@ -97,9 +98,55 @@ life_thirst = 100;
 life_carryWeight = 0;
 life_cash = 0;
 
+if(playerSide == west) then
+{
+	removeAllContainers _unit;
+	
+	_unit removeWeapon (primaryWeapon _unit);
+	_unit removeWeapon (handGunWeapon _unit);
+	removeAllWeapons _unit;
+
+	for "_i" from 0 to 5 do {
+
+	{
+	deleteVehicle _x;
+	} forEach nearestObjects [getPos _unit, ["GroundWeaponHolder"], 5];
+	{
+	deleteVehicle _x;
+	} forEach nearestObjects [getPos _unit, ["WeaponHolderSimulated"], 5];
+
+	sleep 1;
+	};
+};
+if(playerSide == independent) then
+{
+	removeAllContainers _unit;
+	removeUniform _unit;
+	removeBackpack _unit;
+	removeVest _unit;
+	removeHeadgear _unit;
+	
+	_unit removeWeapon (primaryWeapon _unit);
+	_unit removeWeapon (handGunWeapon _unit);
+	removeAllWeapons _unit;
+
+	for "_i" from 0 to 5 do {
+
+	{
+	deleteVehicle _x;
+	} forEach nearestObjects [getPos _unit, ["GroundWeaponHolder"], 5];
+	{
+	deleteVehicle _x;
+	} forEach nearestObjects [getPos _unit, ["WeaponHolderSimulated"], 5];
+
+	sleep 1;
+	};
+};
+
 //Makes our character dead in-case the nab tries to disconnect before being revived.
 if (playerSide == civilian) then
 {
+removeUniform _unit;
 life_is_alive = false;
 };
 
