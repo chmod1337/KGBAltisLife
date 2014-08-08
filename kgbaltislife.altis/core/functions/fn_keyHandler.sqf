@@ -80,7 +80,7 @@ switch (_code) do
 		if(_shift) then {_handled = true;};
 		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 		{
-			if([false,"life_inv_handcuffs",1] call life_fnc_handleInv) then
+			if([false,"uitem_handcuffs",1] call life_fnc_handleInv) then
 			{
 				[] call life_fnc_restrainAction;
 			}
@@ -257,7 +257,7 @@ switch (_code) do
 		};
 	};
 	//
-	case 38:
+	case 36:
 	{
 		if(!life_action_gather && missionNamespace getVariable "life_inv_pickaxe" > 0) then
 		{
