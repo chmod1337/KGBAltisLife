@@ -1462,12 +1462,6 @@
 		</Key>
 	</Package>
 	<Package name="Notifications">
-		<Key ID="STR_NOTF_NoHandcuffs">
-			<Original>You need to have handcuffs!</Original>
-			<English>You need to have handcuffs!</English>
-			<German>Sie müssen sich Handschellen!</German>
-			<French>Vous devez avoir des menottes!</French>
-		</Key>
 		<Key ID="STR_NOTF_NE_1">
 			<Original>You do not have $%1 for a %2</Original>
 			<English>You do not have $%1 for a %2</English>
@@ -3513,12 +3507,6 @@
 			<English>Burgers</English>
 			<German>Burgers</German>
 			<French>Burgers</French>
-		</Key>
-		<Key ID="STR_Item_Handcuffs">
-			<Original>Handcuffs</Original>
-			<English>Handcuffs</English>
-			<German>Handschellen</German>
-			<French>Menottes</French>
 		</Key>
 		<Key ID="STR_Frog">
 			<Original>Bullfrog</Original>
