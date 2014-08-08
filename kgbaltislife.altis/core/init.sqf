@@ -94,7 +94,6 @@ life_fnc_moveIn = compileFinal
 ";
 
 [] execVM "core\init_survival.sqf";
-[] execVM "core\fn_addKey.sqf";///persistent key on disconnect
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 
