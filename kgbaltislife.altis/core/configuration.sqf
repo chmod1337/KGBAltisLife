@@ -163,7 +163,6 @@ life_inv_items =
 	"life_inv_storagesmall",
 	"life_inv_storagebig",
 	"life_inv_burgers",
-	"life_inv_handcuffs",
 	"life_inv_frog", //LSD
 	"life_inv_froglegs", //LSD
 	"life_inv_froglsd"	//LSD
@@ -248,7 +247,6 @@ sell_array =
 	["cement",1950],
 	["goldbar",95000],
 	["burgers",175],
-	["handcuffs",250],
 	["foglegs",1200],
 	["froglsd",3200] //LSD
 ];
@@ -282,7 +280,6 @@ buy_array =
 	["storagesmall",75000],
 	["storagebig",150000],
 	["burgers",350],
-	["handcuffs",500],
 	["froglsd",3200]
 ];
 __CONST__(buy_array,buy_array);
