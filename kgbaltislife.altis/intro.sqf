@@ -9,30 +9,30 @@ _onScreenTime = 7; //<-- How long is the text on the screen for ? Recommended: 1
 
 sleep 4; //Wait in seconds before the credits start after player is in-game
 
-_role1 = "Welcome to";
+_role1 = "Welcome To";
 _role1names = ["KGB Gaming's Altis Life."];
 _role2 = "Developers:";
-_role2names = ["Lead Dev:     Buddytex", "Co-Dev and jack of all trades: 5150 Joker"];
+_role2names = ["Lead Dev: Buddytex", "Co-Dev: 5150 Joker"];
 _role3 = "Textures:";
 _role3names = ["5150 Joker", "The Northern Alex"];
-_role4 = "Audio file contributions";
+_role4 = "Audio File Contributions";
 _role4names = ["Capt Pie"];
-_role5 = "TeamSpeak dev and police chief:";
+_role5 = "TeamSpeak And Police Chief:";
 _role5names = ["The Babbs"];
-_role6 = "Lead tester and jail dev:";
+_role6 = "Lead Tester And Jail Dev:";
 _role6names = ["Jericho"];
-_role7 = "Visit us:";
+_role7 = "Visit Us:";
 _role7names = ["www.kgbgaming.com", "ts3.kgbgaming.com"];
-_role8 = "For server rules and server info:";
+_role8 = "For Server Rules And Server Info:";
 _role8names = ["Press M to view"];
-_role9 = "Special thanks to our testing team:";
+_role9 = "Special Thanks To Our Testing Team:";
 _role9names = ["Angerthosenear", "Nasty Nikolai", "Jericho", "Crunchedd", "The Northern Alex", "Undage"];
 
 {
 sleep 2;
 _memberFunction = _x select 0;
 _memberNames = _x select 1;
-_finalText = format ["<t size='0.55' color='#a6f20b' align='right'>%1<br /></t>", _memberFunction];
+_finalText = format ["<t size='0.55' color='#B40205' align='right'>%1<br /></t>", _memberFunction];
 _finalText = _finalText + "<t size='0.70' color='#FFFFFF' align='right'>";
 {_finalText = _finalText + format ["%1<br />", _x]} forEach _memberNames;
 _finalText = _finalText + "</t>";
