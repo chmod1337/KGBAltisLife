@@ -4028,6 +4028,7 @@ class Mission
 				{
 					position[]={5425.27,33.963062,15034.238};
 					azimut=302.54901;
+					offsetY=0.2;
 					special="NONE";
 					id=235;
 					side="WEST";
@@ -4049,6 +4050,7 @@ class Mission
 				{
 					position[]={5442.2026,33.967491,15054.887};
 					azimut=317.55301;
+					offsetY=0.2;
 					special="NONE";
 					id=236;
 					side="WEST";
@@ -33646,6 +33648,7 @@ class Mission
 			position[]={5453.2085,27.299999,14994.507};
 			name="jail_marker";
 			type="Empty";
+			angle=28.29792;
 		};
 		class Item252
 		{
@@ -33677,17 +33680,17 @@ class Mission
 		};
 		class Item255
 		{
-			position[]={5407.8374,34.218674,15054.116};
+			position[]={5410.1831,34.198402,15054.398};
 			name="cop_spawn_6";
 			type="Empty";
-			angle=180.008;
+			angle=124.05971;
 		};
 		class Item256
 		{
-			position[]={5427.9541,34.135223,15061.305};
-			name="cop_car_1_1";
+			position[]={5429.2124,34.134109,15060.966};
+			name="cop_car_6";
 			type="Empty";
-			angle=-141.2375;
+			angle=-141.23801;
 		};
 	};
 	class Sensors
