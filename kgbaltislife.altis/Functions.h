@@ -239,7 +239,7 @@ class Life_Client_Core
 		class autoSave {};
 		
 		//Random Round + other imports from BL codebase
-		class randomRound {};
+		class randomRound {}; //also used by the marketplace
 		class globalSound {};
 		class globalSoundClient {};
 		class playSound {};
@@ -403,5 +403,23 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+	};
+	class Market
+	{
+		file = "core\market";
+		
+		class openMarketView;
+		class refreshMarketView;
+		class marketShortView;
+		class marketBuy;
+		class marketSell;
+		class marketGetBuyPrice;
+		class marketGetSellPrice;
+		class marketconfiguration;
+		class marketReset;
+		class marketChange;
+		class marketGetRow;
+		class marketGetPriceRow;
+		class marketSetPriceRow;
 	};
 };
