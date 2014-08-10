@@ -60,5 +60,6 @@ switch (_item) do
 	case "frog": {3};
 	case "foglegs": {2};
 	case "froglsd": {1};
+	case "speedbomb": {10};
 	default {1};
 };

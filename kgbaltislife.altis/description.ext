@@ -46,7 +46,12 @@ class CfgSounds
 		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+   class bombarm
+   {
+    name = "bombarm";
+    sound[] = {"\sounds\bombarm.ogg", 1.0, 1};
+    titles[] = {};
+   }; 
 	class tazersound
 	{
 		name = "Tazersound";
@@ -90,120 +95,120 @@ class CfgSounds
 	sound[] = {"\sounds\catchfrog.ogg", 1.0, 1};
 	titles[] = {0, " "};
 	};
-	 class cooking
-  {
+    class cooking
+   {
 	name="cooking";
 	sound[] = {"\sounds\cooking.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
-  class drugcooking
-  {
+   };
+   class drugcooking
+   {
 	name="drugcooking";
 	sound[] = {"\sounds\drugcooking.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
-  class diamondcutting
-  {
+   };
+   class diamondcutting
+   {
 	name="diamondcutting";
 	sound[] = {"\sounds\diamond_cutting.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
-  class smelting
-  {
+   };
+   class smelting
+   {
 	name="smelting";
 	sound[] = {"\sounds\smelting.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class mining
-  {
+   {
 	name="mining";
 	sound[] = {"\sounds\mining.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class bankalarm
-  {
+   {
 	name="bankalarm";
 	sound[] = {"\sounds\bankalarm.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class harvest
-  {
+   {
 	name="harvest";
 	sound[] = {"\sounds\harvest.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class take
-  {
+   {
 	name="take";
 	sound[] = {"\sounds\take.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class collectoil
-  {
+   {
 	name="collectoil";
 	sound[] = {"\sounds\collectoil.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class cementmix
-  {
+   {
 	name="cementmix";
 	sound[] = {"\sounds\cement_mix.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class saltprocess
-  {
+   {
 	name="saltprocess";
 	sound[] = {"\sounds\salt_process.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class processoil
-  {
+   {
 	name="processoil";
 	sound[] = {"\sounds\processoil.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class eat
-  {
+   {
 	name="eat";
 	sound[] = {"\sounds\eat.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class drink
-  {
+   {
 	name="drink";
 	sound[] = {"\sounds\drink.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class unpack
-  {
+   {
 	name="unpack";
 	sound[] = {"\sounds\unpack.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class trunk_open
-  {
+   {
 	name="trunk_open";
 	sound[] = {"\sounds\trunk_open.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class trunk_close
-  {
+   {
 	name="trunk_close";
 	sound[] = {"\sounds\trunk_close.ogg", 1.0, 1};
 	titles[] = {0, " "};
-  };
+   };
   class medic_siren
-  {
+   {
     name = "medic_siren";
     sound[] = {"\sounds\Siren_Med.ogg", 1.0, 1};
     titles[] = {};
-  };
+   };
   class Yelp
- {
+  {
 	name = "Yelp";
 	sound[] = {"\sounds\Yelp.ogg", 1.0, 1};
 	titles[] = {};
-  };
+   };
 };
 
 class CfgDebriefing

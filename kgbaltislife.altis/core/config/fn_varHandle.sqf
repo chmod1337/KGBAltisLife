@@ -69,6 +69,7 @@ switch (_mode) do
 			case "frog": {"life_inv_frog"}; //LSD
 			case "froglegs": {"life_inv_froglegs"};
 			case "froglsd": {"life_inv_froglsd"};
+			case "speedbomb": {"life_inv_speedbomb"};
 		};
 	};
 	
@@ -129,6 +130,7 @@ switch (_mode) do
 			case "life_inv_frog": {"frog"}; //LSD
 			case "life_inv_froglegs": {"froglegs"};
 			case "life_inv_froglsd": {"froglsd"};
+			case "life_inv_speedbomb": {"speedbomb"};
 			
 		};
 	};

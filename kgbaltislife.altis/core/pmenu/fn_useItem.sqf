@@ -86,6 +86,10 @@ switch (true) do
 	{
 		[] spawn life_fnc_pickAxeUse;
 	};
+	case (_item == "speedbomb"):
+	{
+		[] spawn life_fnc_speedBomb;
+	};
 	
 	default
 	{
