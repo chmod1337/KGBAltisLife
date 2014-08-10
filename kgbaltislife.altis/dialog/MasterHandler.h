@@ -25,3 +25,5 @@
 #include "settings.h"
 #include "federalReserve.h"
 #include "compensate.hpp"
+#include "common_EditorWrapper.hpp" //marketplace
+#include "market.hpp" //marketplace
