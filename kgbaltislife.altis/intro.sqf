@@ -10,23 +10,25 @@ _onScreenTime = 7; //<-- How long is the text on the screen for ? Recommended: 1
 sleep 4; //Wait in seconds before the credits start after player is in-game
 
 _role1 = "Welcome To";
-_role1names = ["KGB Gaming's Altis Life."];
-_role2 = "Developers:";
-_role2names = ["Lead Dev: Buddytex", "Co-Dev: 5150 Joker"];
-_role3 = "Textures:";
-_role3names = ["5150 Joker", "The Northern Alex"];
-_role4 = "Audio File Contributions";
-_role4names = ["Capt Pie"];
-_role5 = "TeamSpeak And Police Chief:";
-_role5names = ["The Babbs"];
-_role6 = "Lead Tester And Jail Dev:";
-_role6names = ["Jericho"];
-_role7 = "Visit Us:";
-_role7names = ["www.kgbgaming.com", "ts3.kgbgaming.com"];
-_role8 = "For Server Rules And Server Info:";
-_role8names = ["Press M to view"];
-_role9 = "Special Thanks To Our Testing Team:";
-_role9names = ["Angerthosenear", "Nasty Nikolai", "Jericho", "Crunchedd", "The Northern Alex", "Undage"];
+_role1names = ["KGB Gaming Altis Life"];
+_role2 = "Server Admins:";
+_role2names = ["5150 Joker", "Buddytex"];
+_role3 = "Life Admins:";
+_role3names = ["Jericho", "TheBabbs"];
+_role4 = "Developers:";
+_role4names = ["BuddyTex", "Chmod1337", "5150 Joker"];
+_role5 = "Audio File Contributions:";
+_role5names = ["Capt Pie"];
+_role6 = "TeamSpeak And Police Chief:";
+_role6names = ["The Babbs"];
+_role7 = "Lead Tester And Jail Dev:";
+_role7names = ["Jericho"];
+_role8 = "Textures:";
+_role8names = ["The Northern Alex", "5150 Joker"];
+_role9 = "Visit Us:";
+_role9names = ["Website: www.kgbgaming.com", "TS: ts3.kgbgaming.com"];
+_role10 = "Special Thanks:";
+_role10names = ["Angerthosenear","Jericho","The Northern Alex"];
 
 {
 sleep 2;
@@ -55,5 +57,6 @@ sleep (_onScreenTime);
 [_role6, _role6names],
 [_role7, _role7names],
 [_role8, _role8names],
-[_role9, _role9names]
+[_role9, _role9names],
+[_role10,_role10names]
 ];

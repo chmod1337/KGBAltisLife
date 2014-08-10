@@ -2737,6 +2737,10 @@
 			<Italian>Sirene accese</Italian>
 			<Portuguese>Sirene On</Portuguese>
 		</Key>
+			<Key ID="STR_MISC_YelpON">
+			<Original>Yelp On</Original>
+			<English>Yelp On</English>
+		</Key>
 		<Key ID="STR_MISC_SirensOFF">
 			<Original>Sirens Off</Original>
 			<English>Sirens Off</English>
@@ -2744,6 +2748,10 @@
 			<French>Sirenes Off</French>
 			<Italian>Sirene spente</Italian>
 			<Portuguese>Sirene Off</Portuguese>
+		</Key>
+			<Key ID="STR_MISC_YelpOFF">
+			<Original>Yelp Off</Original>
+			<English>Yelp Off</English>
 		</Key>
 		<Key ID="STR_MISC_NoStorageWarn">
 			<Original>You need to install storage containers to have storing capabilities!</Original>

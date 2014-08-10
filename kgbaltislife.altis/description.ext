@@ -192,6 +192,18 @@ class CfgSounds
 	sound[] = {"\sounds\trunk_close.ogg", 1.0, 1};
 	titles[] = {0, " "};
   };
+  class medic_siren
+  {
+    name = "medic_siren";
+    sound[] = {"\sounds\Siren_Med.ogg", 1.0, 1};
+    titles[] = {};
+  };
+  class Yelp
+ {
+	name = "Yelp";
+	sound[] = {"\sounds\Yelp.ogg", 1.0, 1};
+	titles[] = {};
+  };
 };
 
 class CfgDebriefing

@@ -1,5 +1,5 @@
 /*
-	File: fn_copLights.sqf
+	File: fn_medicLights.sqf
 	Author: mindstorm, modified by Adanteh
 	Link: http://forums.bistudio.com/showthread.php?157474-Offroad-Police-sirens-lights-and-underglow
 	
@@ -10,8 +10,8 @@ Private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRe
 _vehicle = _this select 0;
 	
 if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "lights")) exitWith {};
-_lightRed = [0.1, 0.1, 20];
-_lightBlue = [0.1, 0.1, 20];
+_lightRed = [20, 0.1, 0.1];
+//_lightBlue = [0.1, 0.1, 20];
 
 _lightleft = "#lightpoint" createVehicle getpos _vehicle;   
 sleep 0.2;
@@ -25,6 +25,15 @@ switch (typeOf _vehicle) do
 	{
 		_lightleft lightAttachObject [_vehicle, [-0.37, 0.0, 0.56]];
 	};
+	case "I_Truck_02_covered_F":
+	{
+		_lightleft lightAttachObject [_vehicle, [-0.37, -1.9, 0.7]];
+	};
+	
+	case "C_SUV_01_F":
+	{
+		_lightleft lightAttachObject [_vehicle, [-0.55, 0.6, -0.1]];
+	};
 };
 
 _lightleft setLightAttenuation [0.181, 0, 1000, 130]; 
@@ -35,7 +44,7 @@ _lightleft setLightUseFlare true;
 
 _lightright = "#lightpoint" createVehicle getpos _vehicle;   
 sleep 0.2;
-_lightright setLightColor _lightBlue; 
+_lightright setLightColor _lightRed; 
 _lightright setLightBrightness 0.2;  
 _lightright setLightAmbient [0.1,0.1,1]; 
 
@@ -44,6 +53,15 @@ switch (typeOf _vehicle) do
 	case "C_Offroad_01_F":
 	{
 		_lightright lightAttachObject [_vehicle, [0.37, 0.0, 0.56]];
+	};
+
+	case "I_Truck_02_covered_F":
+	{
+		_lightright lightAttachObject [_vehicle, [0.37, -1.9, 0.7]];
+	};
+case "C_SUV_01_F":
+	{
+		_lightright lightAttachObject [_vehicle, [0.55, 0.6, -0.1]];
 	};
 };
   
