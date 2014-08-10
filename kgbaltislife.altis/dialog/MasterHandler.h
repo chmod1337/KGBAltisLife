@@ -2,6 +2,7 @@
 	Master UI Resource File
 */
 #include "common.hpp"
+#include "common_EditorWrapper.hpp" //marketplace
 #include "shop_items.hpp"
 #include "player_inv.hpp"
 #include "gang.hpp"
@@ -24,6 +25,5 @@
 #include "vehicleShop.h"
 #include "settings.h"
 #include "federalReserve.h"
-#include "compensate.hpp"
-#include "common_EditorWrapper.hpp" //marketplace
 #include "market.hpp" //marketplace
+#include "compensate.hpp"
