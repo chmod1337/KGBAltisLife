@@ -552,6 +552,7 @@ player createDiarySubject ["controls","Controls"];
 				Y: Open Player Menu<br/>
 				U: Lock and unlock cars<br/>
 				F: Cop Siren (if cop)<br/>
+				Shift+F: Cop Yelp<br/>
 				T: Vehicle Trunk<br/>
 				Left Shift + R: Restrain (Cop Only)<br/>
 				Left Shift + G: Knock out / stun (Civ Only, used for robbing them)<br/>

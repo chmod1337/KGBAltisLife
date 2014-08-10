@@ -320,6 +320,7 @@ class Life_Client_Core
 		class repairDoor {};
 		class doorAnimate {};
 		class fedCamDisplay {};
+		class copSiren2 {};
 	};
 	
 	class Gangs

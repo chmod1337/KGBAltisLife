@@ -145,7 +145,7 @@ switch (_code) do
 	{
 		//If cop run checks for turning lights on.
 		if(_shift && playerSide in [west,independent]) then {
-			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"]) then {
+			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","I_Truck_02_covered_F","I_MRAP_03_F"]) then {
 				if(!isNil {vehicle player getVariable "lights"}) then {
 					if(playerSide == west) then {
 						[vehicle player] call life_fnc_sirenLights;
@@ -170,7 +170,8 @@ switch (_code) do
 	
 	//F Key
 	case 33:
-	{
+	{	if (!_shift) then
+		{
 		if(playerSide in [west,independent] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
 		{
 			[] spawn
@@ -193,12 +194,41 @@ switch (_code) do
 				if(playerSide == west) then {
 					[[_veh],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
 				} else {
-					//I do not have a custom sound for this and I really don't want to go digging for one, when you have a sound uncomment this and change medicSiren.sqf in the medical folder.
-					//[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
+					[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
 				};
 			};
 		};
 	};
+		if (_shift) then
+		{
+		if(playerSide in [west,independent] && vehicle player != player && !life_siren2_active && ((driver vehicle player) == player)) then
+		{
+			[] spawn
+			{
+				life_siren2_active = true;
+				sleep 4.7;
+				life_siren2_active = false;
+			};
+			_veh = vehicle player;
+			if(isNil {_veh getVariable "siren2"}) then {_veh setVariable["siren2",false,true];};
+			if((_veh getVariable "siren2")) then
+			{
+				titleText [localize "STR_MISC_YelpOFF","PLAIN"];
+				_veh setVariable["siren2",false,true];
+			}
+				else
+			{
+				titleText [localize "STR_MISC_YelpON","PLAIN"];
+				_veh setVariable["siren2",true,true];
+				if(playerSide == west) then {
+					[[_veh],"life_fnc_copSiren2",nil,true] spawn life_fnc_MP;
+				} else {
+					[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
+				};
+			};
+		};
+	};
+};
 	//U Key
 	case 22:
 	{
