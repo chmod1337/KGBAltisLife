@@ -148,7 +148,8 @@ if(count (handGunItems player) > 0) then
    ["life_inv_tbacon",life_inv_tbacon],["life_inv_lockpick",life_inv_lockpick],["life_inv_redgull",life_inv_redgull],["life_inv_peach",life_inv_peach],["life_inv_diamond",life_inv_diamond],
    ["life_inv_coke",life_inv_coke],["life_inv_cokep",life_inv_cokep],["life_inv_diamondr",life_inv_diamondr],["life_inv_spikeStrip",life_inv_spikeStrip],["life_inv_rock",life_inv_rock],
    ["life_inv_cement",life_inv_cement],["life_inv_goldbar",life_inv_goldbar],["life_inv_storagebig",life_inv_storagebig],["life_inv_storagesmall",life_inv_storagesmall],["life_inv_silver",life_inv_silver],["life_inv_silverr",life_inv_silverr],
-   ["life_inv_burgers",life_inv_burgers],["life_inv_goldbar",life_inv_goldbar],["life_inv_defusekit",life_inv_defusekit],["life_inv_boltcutter",life_inv_boltcutter],["life_inv_blastingcharge",life_inv_blastingcharge],["life_inv_ccocaine",life_inv_ccocaine]
+   ["life_inv_burgers",life_inv_burgers],["life_inv_goldbar",life_inv_goldbar],["life_inv_defusekit",life_inv_defusekit],["life_inv_boltcutter",life_inv_boltcutter],["life_inv_blastingcharge",life_inv_blastingcharge],["life_inv_ccocaine",life_inv_ccocaine],["life_inv_speedbomb",life_inv_speedbomb]
+   
 ];
 
 _ret set[count _ret,_uItems];

@@ -377,6 +377,7 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+		class speedBomb {};
 	};
 	
 	class Dialog_Controls

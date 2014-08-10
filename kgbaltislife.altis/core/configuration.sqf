@@ -166,7 +166,9 @@ life_inv_items =
 	"life_inv_burgers",
 	"life_inv_frog", //LSD
 	"life_inv_froglegs", //LSD
-	"life_inv_froglsd"	//LSD
+	"life_inv_froglsd",	//LSD
+	"life_inv_speedbomb"
+	
 ];
 
 //Setup variable inv vars.
@@ -249,7 +251,8 @@ sell_array =
 	["goldbar",95000],
 	["burgers",175],
 	["foglegs",1200],
-	["froglsd",3200] //LSD
+	["froglsd",3200], //LSD
+	["speedbomb",500000]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -281,7 +284,8 @@ buy_array =
 	["storagesmall",75000],
 	["storagebig",150000],
 	["burgers",350],
-	["froglsd",3200]
+	["froglsd",3200],
+	["speedbomb",700000]
 ];
 __CONST__(buy_array,buy_array);
 
