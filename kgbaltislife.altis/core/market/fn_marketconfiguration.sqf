@@ -96,6 +96,7 @@ life_market_resources = [
 			["marijuana",1], 
 			["cocainep",1],
 			["heroinp",1]
+			["froglsd",1]		
 		] 
 	],
 
@@ -104,6 +105,7 @@ life_market_resources = [
 			["turtle",1], 
 			["cocainep",1],
 			["heroinp",1]
+			["froglsd",1]		
 		] 
 	],
 	
@@ -112,6 +114,7 @@ life_market_resources = [
 			["marijuana",1], 
 			["turtle",1],
 			["heroinp",1]
+			["froglsd",1]		
 		] 
 	],
 
@@ -120,6 +123,15 @@ life_market_resources = [
 			["marijuana",1], 
 			["turtle",1],
 			["cocainep",1]
+			["froglsd",1]		
+		] 
+	]
+	["froglsd", 4000, 1000, 6000, 4, 4,   
+		[ 
+			["marijuana",1], 
+			["cocainep",1],
+			["heroinp",1],
+			["turtle",1]					
 		] 
 	]
 ];
